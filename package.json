@@ -10,12 +10,8 @@
     "dev:frontend": "npm install --prefix frontend start",
     "sequelize": "npm run --prefix backend sequelize",
     "sequelize-cli": "npm run --prefix backend sequelize-cli",
-    "start": "npm start --prefix backend",
-    "sequelize": "sequelize",
-    "sequelize-cli": "sequelize-cli",
-    "start": "per-env",
-    "start:development": "nodemon -r dotenv/config ./bin/www",
-    "start:production": "node ./bin/www"
+    "start": "npm start --prefix backend"
+    
   },
   "keywords": [],
   "author": "",
