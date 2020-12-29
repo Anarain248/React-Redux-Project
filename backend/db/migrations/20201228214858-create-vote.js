@@ -8,10 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      id: {
-        allowNull: false,
-        type: Sequelize.INTEGER
-      },
       upvote: {
         allowNull: false,
         type: Sequelize.INTEGER
@@ -44,4 +40,3 @@ module.exports = {
     return queryInterface.dropTable('Votes');
   }
 };
-
