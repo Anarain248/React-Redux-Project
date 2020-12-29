@@ -6,4 +6,26 @@ const asyncHandler = require('express-async-handler');
 
 const router = express.Router();
 
+router.post(
+    '/upvote',
+    asyncHandler(async (req, res) => {
+      const { upvote, userId, answerId } = req.body;
+      const vote = await Vote.create({ upvote, userId, answerId });
 
+      return res.json({
+        question
+      });
+    })
+  );
+
+  router.post(
+    '/downvote',
+    asyncHandler(async (req, res) => {
+      const { downvote, userId, answerId } = req.body;
+      const vote = await Vote.create({ downvote, userId, answerId });
+
+      return res.json({
+        question
+      });
+    })
+  );
