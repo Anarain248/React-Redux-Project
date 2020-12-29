@@ -1,7 +1,6 @@
 const express = require('express');
 const { setTokenCookie, requireAuth } = require('../../utils/auth');
-const { Vote } = require("../../db/models");
-const vote = require('../../db/models/vote');
+const { Answer } = require("../../db/models");
 const asyncHandler = require('express-async-handler');
 
 const router = express.Router();
@@ -9,25 +8,30 @@ const router = express.Router();
 router.post(
     '/upvote',
     asyncHandler(async (req, res) => {
-      const { upvote, userId, answerId } = req.body;
-      const vote = await Vote.create({ upvote, userId, answerId });
+      const { answerId } = req.body;
+      await Answer.increment( "upVote", {where: { id:answerId }} );
+        const answers = await Answer.findAll();
+        console.log(answers);
 
-      return res.json({
-        vote
-      });
+      res.json(
+        answers
+      );
     })
   );
 
   router.post(
     '/downvote',
     asyncHandler(async (req, res) => {
-      const { downvote, userId, answerId } = req.body;
-      const vote = await Vote.create({ downvote, userId, answerId });
+      const { answerId } = req.body;
+      const vote = await Answer.create({  answerId });
 
       return res.json({
         vote
       });
     })
   );
+
+
+
 
   module.exports = router
