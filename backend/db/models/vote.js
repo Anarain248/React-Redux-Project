@@ -1,7 +1,6 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Vote = sequelize.define('Vote', {
-    id: DataTypes.INTEGER,
     upvote: DataTypes.INTEGER,
     downvote: DataTypes.INTEGER,
     userId: DataTypes.INTEGER,
