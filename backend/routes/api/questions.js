@@ -1,5 +1,4 @@
 const express = require('express');
-const { handleValidationErrors } = require('../../utils/validation');
 const { setTokenCookie, requireAuth } = require('../../utils/auth');
 const { Question } = require("../../db/models");
 const question = require('../../db/models/question');
