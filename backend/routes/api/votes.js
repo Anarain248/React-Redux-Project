@@ -23,13 +23,17 @@ router.post(
     '/downvote',
     asyncHandler(async (req, res) => {
       const { answerId } = req.body;
-      const vote = await Answer.create({  answerId });
+      await Answer.decrement( "downVote", {where: { id:answerId }} );
+        const answers = await Answer.findAll();
+        console.log(answers);
 
-      return res.json({
-        vote
-      });
+      res.json(
+        answers
+      );
     })
   );
+
+
 
 
 
