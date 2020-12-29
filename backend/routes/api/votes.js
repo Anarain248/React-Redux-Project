@@ -13,7 +13,7 @@ router.post(
       const vote = await Vote.create({ upvote, userId, answerId });
 
       return res.json({
-        question
+        vote
       });
     })
   );
@@ -25,7 +25,9 @@ router.post(
       const vote = await Vote.create({ downvote, userId, answerId });
 
       return res.json({
-        question
+        vote
       });
     })
   );
+
+  module.exports = router
