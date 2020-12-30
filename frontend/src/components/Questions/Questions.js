@@ -1,6 +1,8 @@
 import {useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
 import Question from '../../components/Question'
+import Answer from '../../components/Answer'
+import './Questions.css'
 
 
 const Questions = () => {
@@ -10,7 +12,7 @@ const Questions = () => {
 
     return (
         <>
-        <h1>Questions</h1>
+        <h1 className="questions">All Questions</h1>
         { questions.map((question) =>
             <Question question={question}/>
 

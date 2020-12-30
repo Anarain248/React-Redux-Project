@@ -29,7 +29,10 @@ function SignupFormPage() {
 
   return (
     <>
-      <h1>Sign Up</h1>
+      <h2 className='header1'>Join the Fitness Overflow community</h2>
+      <h1 className='header2'>Get all your questions answered on various topics such as nutrition and training</h1>
+      <h1 className='header3'>Ask a question and get your questions answered!</h1>
+      <h1 className="signup">Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <ul>
           {errors.map((error, idx) => <li key={idx}>{error}</li>)}
