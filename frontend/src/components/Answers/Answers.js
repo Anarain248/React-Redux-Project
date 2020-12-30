@@ -1,11 +1,10 @@
-const Questions = () => {
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(getUpVote(1))
-    },[dispatch])
 
+
+
+const Answers = () => {
     return (
-        <h1>Questions</h1>
-
+        <h1>Answers</h1>
     )
 }
+
+export default Answers
