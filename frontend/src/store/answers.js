@@ -7,16 +7,6 @@ const setAnswers= (payload) => {
   }
 };
 
-export const getUpVote = (answerId) => async (dispatch) => {
-    const res = await fetch('/api/votes/upVote', {method: 'POST', body: JSON.stringify({answerId})})
-    const answers = res.data
-    dispatch(setAnswers(answers))
-};
-export const getDownVote = (answerId) => async (dispatch) => {
-  const res = await fetch('/api/votes/downVote', {method: 'POST', body: JSON.stringify({answerId})})
-  const answers = res.data
-  dispatch(setAnswers(answers))
-};
 
 const initialState = [];
 
