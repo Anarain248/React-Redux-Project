@@ -1,3 +1,4 @@
+import Answer from '../../components/Answer'
 
 
 
@@ -6,7 +7,7 @@ const Answers = () => {
         <>
         <h1>Answers</h1>
 
-        { answers.map((answer) =>
+        { Answers.map((answer) =>
             <Answer answer={answer}/>
 
         )}
