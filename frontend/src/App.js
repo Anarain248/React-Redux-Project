@@ -8,11 +8,13 @@ import * as sessionActions from "./store/session";
 import Navigation from "./components/Navigation";
 import Questions from './components/Questions';
 import Answers from "./components/Answers";
+import {getQuestions} from './store/questions';
 
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
+    dispatch(getQuestions());
     dispatch(sessionActions.restoreUser()).then(() => setIsLoaded(true));
   }, [dispatch]);
 

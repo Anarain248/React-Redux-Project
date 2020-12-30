@@ -13,7 +13,7 @@ export const getQuestions = () => {
         const res = await fetch('/api/questions');
         res.data = await res.json();
         if(res.ok) {
-            dispatch(setQuestions(res.data.questions));
+            dispatch(setQuestions(res.data));
         }
         return res;
     }
