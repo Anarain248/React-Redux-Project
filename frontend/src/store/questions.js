@@ -19,7 +19,7 @@ export const getQuestions = () => {
     }
 }
 
-export default function questionsReducer(state={}, action) {
+export default function questionsReducer(state=[], action) {
     switch (action.type) {
         case SET_QUESTIONS:
             return action.questions;
