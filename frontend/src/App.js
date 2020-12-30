@@ -16,6 +16,7 @@ function App() {
 
   return (
     <>
+    <h1>Fitness OverFlow</h1>
       <Navigation isLoaded={isLoaded} />
       {isLoaded && (
         <Switch>
