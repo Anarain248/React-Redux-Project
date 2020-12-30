@@ -21,16 +21,6 @@ module.exports = {
         allowNull: false,
         type: Sequelize.INTEGER
       },
-      upVote: {
-        allowNull: false,
-        type: Sequelize.INTEGER,
-        defaultValue: 0,
-      },
-      downVote: {
-        allowNull: false,
-        type: Sequelize.INTEGER,
-        defaultValue: 0,
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

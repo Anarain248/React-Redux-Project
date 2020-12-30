@@ -8,24 +8,18 @@ module.exports = {
         body: 'demo',
         userId: 1,
         questionId: 1,
-        upVote: 15,
-        downVote: 5,
       },
       {
         id: 2,
         body: 'demo2',
         userId: 2,
         questionId: 2,
-        upVote: 10,
-        downVote: 10,
       },
       {
         id: 3,
         body: 'demo3',
         userId: 3,
         questionId: 3,
-        upVote: 5,
-        downVote: 15
       }
     ], {});
     /*
