@@ -9,6 +9,7 @@ import Navigation from "./components/Navigation";
 import Questions from './components/Questions';
 import Answers from "./components/Answers";
 import {getQuestions} from './store/questions';
+import AskQuestionForm from './components/AskQuestionForm'
 
 function App() {
   const dispatch = useDispatch();
@@ -48,11 +49,16 @@ function App() {
           <Route path="/signup">
             <SignupFormPage />
           </Route>
-          <Route path="/">
+          <Route exact path="/">
             <Questions />
           </Route>
           <Route path="/answers">
             <Answers />
+          </Route>
+          <Route path="/ask-question">
+            <h1>Question Form</h1>
+
+            
           </Route>
         </Switch>
       )}

@@ -4,4 +4,10 @@
 .navbar {
   display: flex;
   justify-content: space-between;
+  background-color: rgba(211, 211, 211, 0.884);
+  height: 47px;
+  align-items: center;
+}
+.signupbutton {
+  background-color: blue;
 }
