@@ -23,12 +23,15 @@ function Navigation({ isLoaded }){
   }
 
   return (
+    <div className="navbar">
+    <h1>fitnessoverflow</h1>
     <ul>
       <li>
-        <NavLink exact to="/">Home</NavLink>
+
         {isLoaded && sessionLinks}
       </li>
     </ul>
+    </div>
   );
 }
 

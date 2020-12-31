@@ -20,10 +20,15 @@ function App() {
 
   return (
     <>
-    <h1>Fitness OverFlow</h1>
+
       <Navigation isLoaded={isLoaded} />
       {isLoaded && (
         <Switch>
+          <Route path='/question/:id'>
+            <div>
+              <h1></h1>
+            </div>
+          </Route>
 
            {/* <Route path="/login" >
             <LoginFormPage />
