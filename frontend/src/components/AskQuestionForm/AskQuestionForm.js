@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import question from '../../../../backend/db/models/question';
 
-const [description, setDescription] = useState("");
+const [questions, setQuestions] = useState("");
 
 
 
@@ -9,7 +10,24 @@ const dispatch = useDispatch();
 
 const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(createExpense(description, parseInt(amount), parseInt(categoryId), userId));
+    dispatch(question(description, userId));
     setDescription("");
-    setAmount("");
 };
+
+return (
+    <div className="form-container">
+      <form className="askquestion-form" onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="questions"
+          placeholder="Questions"
+          value={description}
+          onChange={(e) => setQuestions(e.target.value)}
+        />
+        <button type="submit" disabled={!isFormValid()}>
+          Create Expense
+        </button>
+      </form>
+    </div>
+  );
+}
