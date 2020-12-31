@@ -1,12 +1,22 @@
 
 const SET_QUESTIONS = 'questions/SET_QUESTIONS';
 
+const CREATE_QUESTION = 'questions/CREATE_QUESTION';
+
 export const setQuestions = questions => {
     return {
         type: SET_QUESTIONS,
         questions
     }
-};
+}
+
+export const createQuestion = questions => {
+    return {
+        type: CREATE_QUESTION,
+        questions
+    }
+}
+
 
 export const getQuestions = () => {
     return async dispatch => {
@@ -42,6 +52,8 @@ export const createQuestions = (questions) => {
 export default function questionsReducer(state=[], action) {
     switch (action.type) {
         case SET_QUESTIONS:
+            return action.questions;
+        case CREATE_QUESTION:
             return action.questions;
         default:
             return state;
