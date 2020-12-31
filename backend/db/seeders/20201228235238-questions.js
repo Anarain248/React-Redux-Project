@@ -4,17 +4,17 @@ module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Questions', [{
       id: 1,
-      body: 'demo',
+      body: 'What is the best way to weight train?',
       userId: 1,
     },
     {
       id: 2,
-      body: 'demo2',
+      body: 'Which macro nutrients are best for me?',
       userId: 2,
     },
     {
       id: 3,
-      body: 'demo3',
+      body: 'What is the difference between compound exercises versus isolation exercises?',
       userId: 3,
     }
   ],  {});
