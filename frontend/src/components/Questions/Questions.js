@@ -13,6 +13,7 @@ const Questions = () => {
     return (
         <>
         <h1 className="questions">All Questions</h1>
+        <button>Ask a Question</button>
         { questions.map((question) =>
             <Question question={question}/>
 
