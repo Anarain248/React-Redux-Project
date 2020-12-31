@@ -1,33 +1,44 @@
-import React, {useState} from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import question from '../../../../backend/db/models/question';
-
-const [questions, setQuestions] = useState("");
+import React, {useState} from "react";
+import countries from "./countries";
 
 
+export default function AskQuestionForm() {
+  const [questions, setQuestions] = useState("");
+  const [acceptedTerms, setAcceptedTerms] = useState(false);
 
-const dispatch = useDispatch();
 
-const handleSubmit = (e) => {
-    e.preventDefault();
-    dispatch(question(description, userId));
-    setDescription("");
-};
+  const handleSubmit = (event) => {
+    console.log(`
+      Question: ${questions}
+    `);
 
-return (
-    <div className="form-container">
-      <form className="askquestion-form" onSubmit={handleSubmit}>
+    event.preventDefault();
+  }
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <h1>Add Question</h1>
+
+      <label>
+        Email:
         <input
-          type="text"
-          name="questions"
-          placeholder="Questions"
-          value={description}
-          onChange={(e) => setQuestions(e.target.value)}
-        />
-        <button type="submit" disabled={!isFormValid()}>
-          Submit Question
-        </button>
-      </form>
-    </div>
+          name="Question"
+          type="question"
+          value={questions}
+          onChange={e => setQuestions(e.target.value)}
+          required />
+      </label>
+
+      <label>
+        <input
+          name="acceptedTerms"
+          type="checkbox"
+          onChange={e => setAcceptedTerms(e.target.value)}
+          required />
+        I accept the terms of service
+      </label>
+
+      <button>Submit</button>
+    </form>
   );
 }

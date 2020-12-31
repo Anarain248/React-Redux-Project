@@ -57,8 +57,8 @@ function App() {
           </Route>
           <Route path="/ask-question">
             <h1>Question Form</h1>
+            <AskQuestionForm />
 
-            
           </Route>
         </Switch>
       )}
