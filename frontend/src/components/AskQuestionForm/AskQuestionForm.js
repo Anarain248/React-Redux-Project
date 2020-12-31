@@ -25,7 +25,7 @@ return (
           onChange={(e) => setQuestions(e.target.value)}
         />
         <button type="submit" disabled={!isFormValid()}>
-          Create Expense
+          Submit Question
         </button>
       </form>
     </div>
