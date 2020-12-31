@@ -3,19 +3,52 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert('Questions', [{
-      id: 1,
       body: 'What is the best way to weight train?',
       userId: 1,
     },
     {
-      id: 2,
       body: 'Which macro nutrients are best for me?',
       userId: 2,
     },
     {
-      id: 3,
       body: 'What is the difference between compound exercises versus isolation exercises?',
       userId: 3,
+    },
+    {
+      body: 'What is the best way to weight train?',
+      userId: 4,
+    },
+    {
+      body: 'Which macro nutrients are best for me?',
+      userId: 5,
+    },
+    {
+      body: 'What is the difference between compound exercises versus isolation exercises?',
+      userId: 6,
+    },
+    {
+      body: 'What is the best way to weight train?',
+      userId: 7,
+    },
+    {
+      body: 'Which macro nutrients are best for me?',
+      userId: 8,
+    },
+    {
+      body: 'What is the difference between compound exercises versus isolation exercises?',
+      userId: 9,
+    },
+    {
+      body: 'What is the best way to weight train?',
+      userId: 10,
+    },
+    {
+      body: 'Which macro nutrients are best for me?',
+      userId: 11,
+    },
+    {
+      body: 'What is the difference between compound exercises versus isolation exercises?',
+      userId: 12,
     }
   ],  {});
     /*
