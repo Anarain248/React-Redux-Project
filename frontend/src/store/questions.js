@@ -19,6 +19,26 @@ export const getQuestions = () => {
     }
 }
 
+export const createQuestions = (questions) => {
+    const {message} = questions;
+    return async (dispatch) => {
+        const res = await fetch('/api/questions', {method: 'POST', body: JSON.stringify({
+           message
+          })
+        })
+        res.data = await res.json();
+        if(res.ok) {
+            dispatch(createQuestions(res.data));
+        }
+        return res;
+    }
+}
+
+
+
+
+
+
 export default function questionsReducer(state=[], action) {
     switch (action.type) {
         case SET_QUESTIONS:

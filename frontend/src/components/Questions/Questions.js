@@ -1,4 +1,4 @@
-import {useEffect} from 'react'
+
 import {useDispatch, useSelector} from 'react-redux'
 import Question from '../../components/Question'
 import Answer from '../../components/Answer'

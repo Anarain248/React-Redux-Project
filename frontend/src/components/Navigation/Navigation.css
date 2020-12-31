@@ -7,6 +7,7 @@
   background-color: rgba(211, 211, 211, 0.884);
   height: 47px;
   align-items: center;
+  width: 100%;
 }
 .signupbutton {
   background-color: blue;
