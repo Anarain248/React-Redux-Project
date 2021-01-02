@@ -26,7 +26,8 @@ function Navigation({ isLoaded }){
 
   return (
     <div className="navbar">
-    <h1>fitnessoverflow</h1>
+    <h1 className="fitness">fitnessoverflow</h1>
+
     <ul>
       <li>
 

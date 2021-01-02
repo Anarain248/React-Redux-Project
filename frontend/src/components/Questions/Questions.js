@@ -19,7 +19,7 @@ const Questions = () => {
 
 
     return (
-        <>
+        <div className="page-color">
         <h1 className="questions">All Questions</h1>
         <Link to="/ask-question">
         <button className="questionbutton">Ask a Question</button>
@@ -28,7 +28,7 @@ const Questions = () => {
             <Question question={question}/>
 
         )}
-        </>
+        </div>
 
     )
 }

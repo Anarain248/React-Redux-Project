@@ -4,10 +4,16 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(211, 211, 211, 0.884);
+  background-color: #282828;
   height: 47px;
   align-items: center;
   width: 100%;
+  min-height: 10vh;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+
+
 }
 .signupbutton {
   background-color: lightblue;
@@ -20,4 +26,10 @@
 
 .signupbutton:hover {
   background-color: blue;
+}
+.fitness {
+  font-size: 25px;
+  font-weight: bold;
+  font: 25px Arial, bold, sans-serif;
+  color: white;
 }

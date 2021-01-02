@@ -31,7 +31,7 @@ import Answers from "../Answers";
         <input
           name="Answer"
           type="Answer"
-          
+
           onChange={e => setAnswer(e.target.value)}
           required />
       </label>

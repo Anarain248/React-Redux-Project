@@ -14,11 +14,11 @@ const Question = ({question}) => {
         <Link to={`/question/${question.id}`}>
         <h2 className='question'>{question.body}</h2>
         </Link>
-       {/* { console.log(question)}
-        {question.Answers && filteredAnswer =>
+       { console.log(question)}
+        {/* {question.Answers && filteredAnswer =>
 
             return <Answer answer={answer}/>
-        })} */}
+        } */}
         </>
     )
 }

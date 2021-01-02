@@ -4,8 +4,9 @@
     font-size: 40px;
     text-shadow: 1px 1px;
     padding-top: 10px;
-    width: 80%;
+    width: 100%;
     border-bottom: solid gray 3px;
+    display:inline-block;
 
 }
 .questionbutton{
@@ -16,10 +17,14 @@
     border: 2px solid rgb(86, 86, 228);
     border-radius: 5px;
     font-size: 16px;
-
+    float: right;
 
 }
 
 .questionbutton:hover {
     background-color: blue;
+}
+
+.page-color {
+    background-color: lightgrey;
 }

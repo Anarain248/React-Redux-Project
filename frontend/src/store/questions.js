@@ -34,7 +34,7 @@ export const postQuestion = (body, userId) => {
     return async (dispatch) => {
         const res = await fetch('/api/questions', {method: 'POST', body: JSON.stringify({
            body,
-           userId
+           userId,
           })
         })
 

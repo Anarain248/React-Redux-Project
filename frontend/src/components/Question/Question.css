@@ -1,11 +1,14 @@
 .question {
     text-align: center;
     font-style: italic;
-    color: blue;
-    width: 70%;
+    font: 16px;
+    font-family: Helvitica;
+    color: #0077cc;
+    width: 100%;
     display: grid;
     grid-template:auto;
     padding:15px;
-    border-bottom: 2px solid grey;
-   
+    margin: 0px 0px 19px;
+    border-bottom: 1px solid grey;
+
 }
