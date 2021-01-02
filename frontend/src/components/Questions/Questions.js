@@ -4,12 +4,18 @@ import Question from '../../components/Question'
 import Answer from '../../components/Answer'
 import './Questions.css'
 import {Link } from 'react-router-dom'
+import {getAnswers} from '../../store/answers'
+import { useEffect } from 'react'
 
 
 
 const Questions = () => {
     const dispatch = useDispatch();
     const questions = useSelector(state => state.questions);
+
+    useEffect(() => {
+        dispatch(getAnswers())
+    }, [dispatch])
 
 
     return (

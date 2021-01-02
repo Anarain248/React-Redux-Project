@@ -1,10 +1,15 @@
 import React, {useState} from "react";
+import {postQuestion} from '../../store/questions';
+import {useDispatch, useSelector} from 'react-redux';
 
 
 
  function AskQuestionForm() {
+
   const [questions, setQuestions] = useState("");
   const [acceptedTerms, setAcceptedTerms] = useState(false);
+  const dispatch = useDispatch()
+  const userId = useSelector(state => state.session.user.id)
 
 
   const handleSubmit = (event) => {
@@ -13,6 +18,8 @@ import React, {useState} from "react";
     `);
 
     event.preventDefault();
+    dispatch(postQuestion(questions, userId))
+
   }
 
   return (

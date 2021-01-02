@@ -1,3 +1,4 @@
+import {fetch} from './csrf.js'
 
 const SET_QUESTIONS = 'questions/SET_QUESTIONS';
 
@@ -10,10 +11,10 @@ export const setQuestions = questions => {
     }
 }
 
-export const createQuestion = questions => {
+export const createQuestion = question => {
     return {
         type: CREATE_QUESTION,
-        questions
+        question
     }
 }
 
@@ -21,25 +22,24 @@ export const createQuestion = questions => {
 export const getQuestions = () => {
     return async dispatch => {
         const res = await fetch('/api/questions');
-        res.data = await res.json();
-        if(res.ok) {
+
+
             dispatch(setQuestions(res.data));
-        }
+
         return res;
     }
 }
 
-export const createQuestions = (questions) => {
-    const {message} = questions;
+export const postQuestion = (body, userId) => {
     return async (dispatch) => {
         const res = await fetch('/api/questions', {method: 'POST', body: JSON.stringify({
-           message
+           body,
+           userId
           })
         })
-        res.data = await res.json();
-        if(res.ok) {
-            dispatch(createQuestions(res.data));
-        }
+
+            dispatch(createQuestion(res.data));
+
         return res;
     }
 }
@@ -54,7 +54,7 @@ export default function questionsReducer(state=[], action) {
         case SET_QUESTIONS:
             return action.questions;
         case CREATE_QUESTION:
-            return action.questions;
+            return [...state, action.question]
         default:
             return state;
 
