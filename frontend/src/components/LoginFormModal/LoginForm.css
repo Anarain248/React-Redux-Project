@@ -1,3 +1,12 @@
 .loginbutton {
-    background-color: lightblue;
+    background-color: lightgrey;
+    margin: 6px 2px;
+    padding: 6px;
+    border: 2px solid rgb(86, 86, 228);
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.loginbutton:hover {
+    background-color: darkgray;
 }
