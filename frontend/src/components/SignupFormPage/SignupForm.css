@@ -1,5 +1,50 @@
 .signup {
     text-align: center;
-    font-style: italic;
+    font-style: normal;
     font-weight: bold;
+    font-size: 25px;
+    box-shadow: grey;
+    display: grid;
+    grid-column: vertical;
 }
+.email {
+  font-weight: bold;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+.username {
+  font-weight: bold;
+  width: 100%;
+  padding: 5px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+.password {
+  font-weight: bold;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.confirmpassword {
+  font-weight: bold;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
