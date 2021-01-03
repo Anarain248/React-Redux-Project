@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {postQuestion} from '../../store/questions';
 import {useDispatch, useSelector} from 'react-redux';
-
+import './AskQuestionForm.css'
 
 
  function AskQuestionForm() {
@@ -23,10 +23,10 @@ import {useDispatch, useSelector} from 'react-redux';
   }
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h1>Add Question</h1>
+    <form className="form" onSubmit={handleSubmit}>
+      <h1 className="ask">Ask Question</h1>
 
-      <label>
+      <label className="questionlabel">
         Question:
         <input
           name="Question"
@@ -36,7 +36,7 @@ import {useDispatch, useSelector} from 'react-redux';
           required />
       </label>
 
-      <label>
+      <label className="terms">
         <input
           name="acceptedTerms"
           type="checkbox"
@@ -46,7 +46,7 @@ import {useDispatch, useSelector} from 'react-redux';
         I accept the terms of service
       </label>
 
-      <button>Submit</button>
+      <button className="submitbutton">Submit</button>
     </form>
   );
 }

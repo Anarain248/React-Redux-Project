@@ -26,6 +26,7 @@
 
 .signupbutton:hover {
   background-color: blue;
+  cursor: pointer;
 }
 .fitness {
   font-size: 25px;

@@ -1,0 +1,33 @@
+.ask{
+
+    font-style: normal;
+    font-size: 35px;
+    font-weight: bold;
+    align-items: center;
+
+}
+.questionlabel {
+
+    font-style: normal;
+    font-size: 25px;
+    font-weight: bold;
+}
+.terms {
+
+    font-style: normal;
+    font-size: 15px;
+
+}
+.submitbutton {
+    background-color: lightblue;
+    margin: 6px 2px;
+    padding: 6px;
+    border: 2px solid rgb(86, 86, 228);
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.submitbutton:hover {
+    background-color: blue;
+}

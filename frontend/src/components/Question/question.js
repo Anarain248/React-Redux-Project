@@ -6,9 +6,9 @@ import {useSelector} from 'react-redux'
 
 const Question = ({question}) => {
     const answers = useSelector(state => state.answers);
-    const filteredAnswer = answers.filter((answer) => {
-        return answer.questionId === question.id
-    })
+    // const filteredAnswer = answers.filter((answer) => {
+    //     return answer.questionId === question.id
+    // })
     return (
         <>
         <Link to={`/question/${question.id}`}>

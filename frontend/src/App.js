@@ -12,6 +12,7 @@ import Answers from "./components/Answers";
 import {getQuestions} from './store/questions';
 import AskQuestionForm from './components/AskQuestionForm'
 import SubmitAnswerForm from './components/SubmitAnswerForm'
+import LoginFormPage from './components/LoginFormPage';
 
 function App() {
   const dispatch = useDispatch();
@@ -59,6 +60,7 @@ function App() {
             <SubmitAnswerForm />
 
           </Route>
+          
         </Switch>
       )}
     </>

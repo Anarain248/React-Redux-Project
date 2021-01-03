@@ -23,6 +23,7 @@
 
 .questionbutton:hover {
     background-color: blue;
+    cursor: pointer;
 }
 
 .page-color {
