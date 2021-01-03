@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import {postAnswer} from '../../store/answers';
 import {useDispatch, useSelector} from 'react-redux';
 import Answers from "../Answers";
-
+import './SubmitAnswerForm.css'
 
 
  function SubmitAnswerForm() {
@@ -24,9 +24,9 @@ import Answers from "../Answers";
 
   return (
     <form onSubmit={handleSubmit}>
-      <h1>Answer Question</h1>
+      <h1 className="answerquestion">Answer Question</h1>
 
-      <label>
+      <label className="answer">
         Answer:
         <input
           name="Answer"
@@ -36,7 +36,7 @@ import Answers from "../Answers";
           required />
       </label>
 
-      <button>Submit</button>
+      <button className="submitbutton">Submit</button>
     </form>
   );
 }

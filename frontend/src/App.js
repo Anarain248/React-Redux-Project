@@ -33,7 +33,7 @@ function App() {
               <h2>What is the best way to weight train?</h2>
               <h1>There is no best way to weight train, everybody is different and over time with varying rep ranges you will find your favorite. A quick guid would be strength with 1-5 reps, hypertrophy with 8-12 reps, and endurance with 15-25 reps.</h1>
               <Link to="/answer-question">
-              <button>
+              <button className="submitbutton">
                 Submit An Answer
                 </button>
                 </Link>
@@ -60,7 +60,7 @@ function App() {
             <SubmitAnswerForm />
 
           </Route>
-          
+
         </Switch>
       )}
     </>
