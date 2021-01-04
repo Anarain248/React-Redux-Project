@@ -25,16 +25,19 @@ function Navigation({ isLoaded }){
   }
 
   return (
+
     <div className="navbar">
     <h1 className="fitness">fitnessoverflow</h1>
-
+    <input className="searchbar" type="text" placeholder="Search"></input>
     <ul>
       <li>
 
         {isLoaded && sessionLinks}
       </li>
     </ul>
+
     </div>
+
   );
 }
 

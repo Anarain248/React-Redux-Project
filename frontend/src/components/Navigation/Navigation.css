@@ -34,3 +34,7 @@
   font: 25px Arial, bold, sans-serif;
   color: white;
 }
+.searchbar {
+  padding: 5px;
+  font-size: 15px;
+}
