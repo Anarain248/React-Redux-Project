@@ -1,0 +1,84 @@
+.answerspage {
+    background: radial-gradient(
+
+
+        rgb(115, 151, 146) 0%,
+        rgb(44, 46, 51) 100%
+
+    )
+
+
+}
+
+.title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.answer1 {
+    font-weight: normal;
+    font-size: large;
+    display: grid;
+    grid-template:auto;
+    padding:20px;
+    margin: 0px 0px 15px;
+    border-bottom: 1px solid grey;
+    box-shadow: lightgrey;
+
+}
+
+.answer2 {
+    font-weight: normal;
+    font-size: large;
+    display: grid;
+    grid-template:auto;
+    padding:20px;
+    margin: 0px 0px 15px;
+    border-bottom: 1px solid grey;
+    box-shadow: lightgrey;
+
+}
+
+.answer3 {
+    font-weight: normal;
+    font-size: large;
+    display: grid;
+    grid-template:auto;
+    padding:20px;
+    margin: 0px 0px 15px;
+    border-bottom: 1px solid grey;
+    box-shadow: lightgrey;
+}
+
+.answer4 {
+    font-weight: normal;
+    font-size: large;
+    display: grid;
+    grid-template:auto;
+    padding:20px;
+    margin: 0px 0px 15px;
+    border-bottom: 1px solid grey;
+    box-shadow: lightgrey;
+}
+
+.answer5 {
+    font-weight: normal;
+    font-size: large;
+    display: grid;
+    grid-template:auto;
+    padding:20px;
+    margin: 0px 0px 15px;
+    border-bottom: 1px solid grey;
+    box-shadow: lightgrey;
+}
+
+.answer6 {
+    font-weight: normal;
+    font-size: large;
+    display: grid;
+    grid-template:auto;
+    padding:20px;
+    margin: 0px 0px 15px;
+    border-bottom: 1px solid grey;
+    box-shadow: lightgrey;
+}

@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import { Route, Switch } from "react-router-dom";
 import SignupFormPage from "./components/SignupFormPage";
 import {Link} from 'react-router-dom';
+import './index.css'
+import AnswerToQuestion from './components/AnswerToQuestion';
 
 //  import LoginFormPage from "./components/LoginFormPage";
 import * as sessionActions from "./store/session";
@@ -29,17 +31,7 @@ function App() {
       {isLoaded && (
         <Switch>
           <Route path='/question/:id'>
-            <div>
-              <h2>What is the best way to weight train?</h2>
-              <h1>There is no best way to weight train, everybody is different and over time with varying rep ranges you will find your favorite. A quick guid would be strength with 1-5 reps, hypertrophy with 8-12 reps, and endurance with 15-25 reps.</h1>
-              <h1>That will depend on your body type(whether you are a ectomorph, mesomorph, or endomorph) along with your body weight and daily activity</h1>
-              <Link to="/answer-question">
-              <button className="submitbutton">
-                Submit An Answer
-                </button>
-                </Link>
-
-            </div>
+            <AnswerToQuestion />
           </Route>
            {/* <Route path="/login" >
             <LoginFormPage />
