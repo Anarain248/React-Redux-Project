@@ -4,7 +4,7 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: #282828;
+  background-color: black;
   height: 47px;
   align-items: center;
   width: 100%;

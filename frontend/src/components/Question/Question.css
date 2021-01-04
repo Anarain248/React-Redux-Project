@@ -3,7 +3,7 @@
     font-style: italic;
     font: 16px;
     font-family: Helvitica;
-    color: #0077cc;
+    color: darkblue;
     width: 100%;
     display: grid;
     grid-template:auto;
@@ -12,4 +12,8 @@
     border-bottom: 1px solid grey;
     box-shadow: lightgrey;
 
+}
+
+.answer {
+    font-weight: bold;
 }

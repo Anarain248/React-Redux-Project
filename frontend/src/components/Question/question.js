@@ -16,7 +16,7 @@ const Question = ({question}) => {
         </Link>
        { console.log(question)}
         {question.Answers && question.Answers.map((answer) => {
-            return <p>{answer.body}</p>
+            return <p className="answer">{answer.body}</p>
         })}
         </>
     )

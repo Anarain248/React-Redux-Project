@@ -7,6 +7,7 @@
     width: 100%;
     border-bottom: solid gray 3px;
     display:inline-block;
+    font-family: "Times New Roman", Times, serif;
 
 }
 .questionbutton{
@@ -28,4 +29,10 @@
 
 .page-color {
     background-color: lightgrey;
+    background: radial-gradient(
+
+
+        rgb(115, 151, 146) 0%,
+        rgb(44, 46, 51) 100%
+    )
 }
